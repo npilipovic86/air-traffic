@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  padding-top: 1vw;
+  padding-bottom: 3vw;
+  overflow-x:auto;
+  left: 50%;
+  margin-left: -250px;
+}
+h1, p{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+p{
+  font-size:15px;
+  margin-top: 0;
+  font-style: oblique
+}
+
+table {
+  width: 500px;
+  padding:10px;
+  border-collapse: collapse;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  table-layout:fixed;
+
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-collapse: collapse;
+  cursor: pointer;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  transition: 200ms;
+}
+
+tbody td {
+  position: relative;
+}
+ .icon-left {
+    height: 25px;
+}
+.icon-right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    height: 25px
+}

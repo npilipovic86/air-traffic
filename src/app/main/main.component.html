@@ -1,0 +1,21 @@
+
+<div class="container" *ngIf="location">
+		<h1>List of planes flying over you</h1>
+		<p>Click and find out more about them</p>
+	<table >
+		<thead>
+			<tr>
+				<th>W / E</th>
+				<th>Flight code number</th>
+				<th>Altitude</th>
+			</tr>
+		</thead>
+		<tbody *ngIf="airplanes">
+        <tr *ngFor="let airplane of airplanes"  routerLink="/airplane/{{airplane.Id}}">
+            <td><img [ngClass]="{'icon-left': airplane.Brng<180, 'icon-right': airplane.Brng>180}" src="assets/data/airplane-r.svg"></td>
+            <td>{{ airplane.Call  }}</td>
+            <td>{{ airplane.Alt  }}</td>
+          </tr>
+		</tbody>
+	</table>
+</div>

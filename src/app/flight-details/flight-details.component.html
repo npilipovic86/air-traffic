@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h1>Flight details</h1>
+    <table >
+      <thead>
+        <tr>
+          <th>Airplane info</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Airline company</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngIf="airplane">
+              <td>{{airplane.Mdl}}</td>
+              <td>{{airplane.From}}</td>
+              <td>{{airplane.To}}</td>
+              <td>{{airplane.Op}}</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>

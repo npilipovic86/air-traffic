@@ -1,0 +1,9 @@
+{
+ "/planes/*": {
+                "target": "https://public-api.adsbexchange.com",
+                "secure": true,
+               
+                "changeOrigin": true,
+                "pathRewrite": { "^/planes": "" }
+            }
+}
